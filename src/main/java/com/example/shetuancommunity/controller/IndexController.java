@@ -11,6 +11,7 @@ public class IndexController {
     @GetMapping("/hello")
     public  String index()
     {
+
          return  "index";
     }
 }
