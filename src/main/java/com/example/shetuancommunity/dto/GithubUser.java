@@ -1,18 +1,6 @@
 package com.example.shetuancommunity.dto;
 
 public class GithubUser {
-    private  String name;
-    private  Long id;
-    private  String bio;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Long getId() {
         return id;
     }
@@ -21,11 +9,29 @@ public class GithubUser {
         this.id = id;
     }
 
-    public String getBio() {
-        return bio;
+    public String getLogin() {
+        return login;
     }
 
-    public void setBio(String bio) {
-        this.bio = bio;
+    public void setLogin(String login) {
+        this.login = login;
     }
+
+    public String getNode_id() {
+        return node_id;
+    }
+
+    public void setNode_id(String node_id) {
+        this.node_id = node_id;
+    }
+
+    private  Long id;
+    private  String login;
+    private  String node_id;
+
+
+
+
+
+
 }
