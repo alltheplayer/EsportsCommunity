@@ -9,6 +9,7 @@
 [Github地址]（https://github.com/alltheplayer/EsportsCommunity）
 [bootstrap框架]（https://v3.bootcss.com/components/）
 [okHttp请求]（https://square.github.io/okhttp/）
+[flyway](https://flywaydb.org/documentation/getstarted/firststeps/maven)
 
 ##sql 脚本
 create table FORUSER
