@@ -3,9 +3,9 @@
 <head>
   <title>电竞社论坛</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
-  <link rel="stylesheet" href="css/communtiy_publish.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="/css/communtiy_publish.css"/>
 
   <script src="js/bootstrap.min.js" type="application/javascript"></script>
 </head>
@@ -59,7 +59,9 @@
           </a>
         </div>
         <div class="media-body">
-            <h4 class="media-heading" th:text="${question.getTitle()}"></h4>
+            <h4 class="media-heading" >
+              <a th:href="@{'/question/'+${question.getId()}}"  th:text="${question.getTitle()}"></a>
+            </h4>
           <span th:text="${question.getDescription()}"></span>
            <br>
           <span class="text-desc"><span th:text="${question.getCommentCount()}"></span>个回复·<span th:text="${question.getViewCount()}"></span>次浏览·<span th:text="${#dates.format(question.getGmtCreate(),'dd MMMM yyyy')}"></span></span>
