@@ -16,7 +16,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">电竞社论坛</span>
             </button>
-            <a class="navbar-brand" href="#">电竞社论坛</a>
+            <a class="navbar-brand" href="/">电竞社论坛</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form class="navbar-form navbar-left">
@@ -27,7 +27,7 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li th:if="${session.user!=null}">
-                    <a href="publish">发布</a>
+
                 </li>
                 <li class="dropdown" th:if="${session.user!= null}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -70,6 +70,16 @@
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h3>发起人</h3>
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-rounded "  th:src="${question.getUser().getAvatarUrl()}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" th:text="${question.getUser().getName()}" >
+
+                    </h4>
+                </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h3>相关问题</h3>

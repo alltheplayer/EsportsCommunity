@@ -23,3 +23,5 @@ GMT_MODIFIED BIGINT,
 constraint FORUSER_PK
 primary key (ID)
 );
+
+./mvnw.cmd flyway:migrate

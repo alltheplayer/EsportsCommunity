@@ -66,4 +66,9 @@ public class QuestionService {
             questionMapper.update(question);
         }
     }
+
+    public void incView(Integer id) {
+
+        questionMapper.updateView(id);
+    }
 }
